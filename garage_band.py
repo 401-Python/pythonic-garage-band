@@ -25,7 +25,6 @@ class Band():
           if musician['instrument'] == 'Guitar':
               cls.members.append(
                   Guitarist(musician['name'], musician['instrument']))
-              print(len(cls.members))
               continue
 
           elif musician['instrument'] == 'Bass':
@@ -46,9 +45,7 @@ class Musician(Band):
     musician_list = []
 
     def __init__(self, name):
-        super().__init__(self)
         self.name = name
-        self.__class__.musician_list.append(self)
 
     @classmethod
     def get_members(cls):
