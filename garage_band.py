@@ -3,7 +3,8 @@
 class Band():
     members = []
 
-    def __init__(self, name):
+    def __init__(self, name, band):
+        self.band = band
         self.name = name
         self.__class__.members.append(self)
 
@@ -89,11 +90,6 @@ class Drummer(Musician):
 
     def get_instrument(self):
         return 'Drums'
-
-
-# guitar_boy = Guitarist('Jimmy', 'guitar')
-# bass_boy = Bassist('Michael', 'bass')
-# drummer_boy = Drummer('Lisa', 'drums')
 
 
 data = [
