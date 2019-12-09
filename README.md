@@ -25,19 +25,21 @@ Each kind of Musician instance should have a play_solo method that returns strin
   #### classes
 
   * ```Band```
-
+    Band class attributes include a name, and a band which should be equal to an array of Musicians
 
   * ```Musician```
-    
+    Parent class for each type of musician
   
   * ```Guitarist```
-
+    Sub-class of musician, takes a name and instrument which should be a string
 
   * ```Bassist```
-    
+        Sub-class of musician, takes a name and instrument which should be a string
+
 
   * ```Drummer```
-     
+         Sub-class of musician, takes a name and instrument which should be a string
+
 
 
 
